@@ -377,7 +377,7 @@ set -sg escape-time 0
 set -g status-position top
 
 # enable italics
-set -g default-terminal "tmux"
+set -g default-terminal "tmux-256color"
 
 # -- custom variables ----------------------------------------------------------
 # to define a custom #{foo} variable, define a POSIX shell function between the
