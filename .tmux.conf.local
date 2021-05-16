@@ -347,6 +347,11 @@ bind C-a send-prefix
 bind-key v split-window -h
 bind-key x split-window -v
 
+bind -r h resize-pane -L 2
+bind -r n resize-pane -D 2
+bind -r e resize-pane -U 2
+bind -r i resize-pane -R 2
+
 # Smart pane switching with awareness of Vim splits.
 # See: https://github.com/christoomey/vim-tmux-navigator
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
